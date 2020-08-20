@@ -15,6 +15,7 @@ void dfs(int count, int n, int idx, int sum) {
 	// Leaf
 	if (idx == n) {
 		if (max_value < sum) max_value = sum;
+		return;
 	}
 
 	// Check
