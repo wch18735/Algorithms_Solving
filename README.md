@@ -13,6 +13,6 @@
 
 > RANK IN SOLVED.AC
 
-- CLASS **2**
-- SILVER IV (94.65%)
+- CLASS **4**
+- Gold IV (38.95%, 2021-02-07)
 
