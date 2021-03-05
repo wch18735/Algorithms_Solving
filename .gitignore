@@ -1,5 +1,12 @@
 #folder
 CODE_CONSTRUCTOR/
 
-#file
+# .vs file
 *.vs
+
+# .iml
+*.iml
+
+# .xml
+*.xml
+SW Expert Academy/D2/.idea/D2.iml
