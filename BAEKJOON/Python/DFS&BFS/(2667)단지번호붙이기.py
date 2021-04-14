@@ -64,7 +64,7 @@ for i in range(N):
         if DMAP[i][j] is not False:
             d_list[DMAP[i][j]] += 1
 
-# 정렬
+# Sorting
 d_list.sort()
 
 # 정답 print
