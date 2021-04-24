@@ -46,7 +46,7 @@ def main():
                 y = point[0]
                 MAP[y][x] = value
 
-            # 큐 클링어
+            # 큐 클리어
             rotate_que.clear()
             position_que.clear()
 
