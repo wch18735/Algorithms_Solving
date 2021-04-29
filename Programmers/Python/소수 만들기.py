@@ -1,7 +1,6 @@
 from math import sqrt
 from itertools import combinations
 
-
 def solution(nums):
     answer = 0
 
