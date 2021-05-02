@@ -42,12 +42,8 @@ def main():
         adj_node_list = [[] for _ in range(n + 1)]
         for _ in range(m):
             a, b, d = map(int, input().split(' '))
-            if (a, b) == (g, h) or (a, b) == (h, g):
-                adj_node_list[a].append((b, d * 2 - 1))
-                adj_node_list[b].append((a, d * 2 - 1))
-            else:
-                adj_node_list[a].append((b, d * 2))
-                adj_node_list[b].append((a, d * 2))
+            adj_node_list[a].append((b, d))
+            adj_node_list[b].append((a, d))
 
         # 후보
         validate_nodes = []
@@ -57,10 +53,16 @@ def main():
 
         # 다익스트라
         s_dp = dijkstra(s)
+        h_dp = dijkstra(h)
+        g_dp = dijkstra(g)
+        h_to_g = min(h_dp[g], g_dp[h])
 
         for v in validate_nodes:
-            if s_dp[v] % 2 == 1:
+            minimum_d = s_dp[v]
+
+            if s_dp[h] + h_to_g + g_dp[v] == minimum_d or s_dp[g] + h_to_g + h_dp[v] == minimum_d:
                 print(v, end=' ')
+
         print()
 
 
