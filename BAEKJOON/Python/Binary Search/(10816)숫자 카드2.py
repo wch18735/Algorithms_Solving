@@ -23,9 +23,10 @@ if __name__=="__main__":
             else:
                 right_point = middle_point
 
+        # left most
         left_most = left_point
 
-        # 처음 left most를 이용해 있는지 확인
+        # 처음 left most 를 이용해 있는지 확인
         if left_most == len(num_list) or num_list[left_most] != target:
             print(0, end=' ')
             continue
