@@ -8,8 +8,8 @@ if __name__=="__main__":
     # DP
     dp = [[0 for i in range(N+1)] for j in range(N + 1)]
 
-    for p in range(1, N+1):
-        for card_num in range(N+1):
+    for card_num in range(1, N+1):
+        for p in range(N + 1):
             if card_num - p < 0:
                 # 새로운 카드를 사용할 수 없을 때
                 dp[p][card_num] = dp[p-1][card_num]
