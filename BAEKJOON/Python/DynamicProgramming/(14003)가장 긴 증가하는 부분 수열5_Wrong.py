@@ -16,7 +16,7 @@ def right_greater_equal(arr, t):
 
     if R == 0:
         # target 이 가장 작은 상황일 때
-        return 1
+        return 0
 
     elif arr[R-1] == t:
         # target 값과 같은 원소가 배열에 존재할 때
@@ -52,11 +52,15 @@ if __name__=="__main__":
             dp[idx] = num_arr[i]
             dp_pos[i][1] = idx
 
+        print(dp)
+
     # 최장 수열의 길이
     print(len(dp))
 
     # 실제 최장 증가 길이 부분 수열
     answer = deque()
+
+    print(dp_pos)
 
     # 오른쪽 경계
     limit_idx = len(dp_pos)
@@ -68,7 +72,6 @@ if __name__=="__main__":
                 break
             else:
                 i += 1
-
         limit_idx -= i
 
     # 구해진 최장 수열
