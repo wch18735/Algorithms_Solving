@@ -45,8 +45,7 @@ if __name__=="__main__":
             continue
 
         # change priority
-        for p in HEAP:
-            p.p_prior += 1
+        process.p_prior -= 1
 
         heappush(HEAP, process)
         t += 1
