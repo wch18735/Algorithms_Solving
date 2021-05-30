@@ -1,19 +1,21 @@
 ## ALGORITHM SOLVING
-----
-> LANGUAGE  
-> 
-- **C** <font size = "1">(Intermediate)</font>
-- **C++** <font size = "1">(Intermediate)</font>
-- **Python** <font size = "1">(Intermediate)</font>
+
+> Skills
+- **C**
+- **C++**
+- **Python**
+- **Java**
+- **SQL**
 
 > PROBLEM FROM
 
 - [BAEKJOON ONLINE JUDGE](https://www.acmicpc.net/)
 - [SOLVED.AC](https://solved.ac/)
 - [SW Expert Academy](https://swexpertacademy.com/main/main.do)
+- [Programmers](https://programmers.co.kr/)
+- [HackerRank](https://www.hackerrank.com/dashboard)
 
-> RANK IN SOLVED.AC
+> RANK IN SOLVED.AC (2021-05-30)
 
-- CLASS **4**
-- Gold IV (38.95%, 2021-02-07)
+- Gold 2 (1383/1400)
 
