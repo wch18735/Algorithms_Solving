@@ -3,7 +3,7 @@ def track(i, j):
 
     answer = []
 
-    while i != 0 or j != 0:
+    while i != 0 and j != 0:
         # 현재 값이 왼쪽에서 온 것인지 오른쪽에서 온 것인지 확인
         current_val = DP[i][j]
 
