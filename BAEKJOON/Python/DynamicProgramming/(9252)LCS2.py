@@ -37,6 +37,5 @@ if __name__ == "__main__":
 
     answer = track(len(UPPER_STR), len(DOWN_STR))
 
-    print(len(answer))
     for idx in answer[::-1]:
         print(UPPER_STR[idx - 1], end='')
