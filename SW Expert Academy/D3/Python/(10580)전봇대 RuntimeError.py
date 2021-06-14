@@ -1,10 +1,10 @@
 from bisect import bisect_left
 
 def main():
-    T = int(input())
+    T = int(input().strip())
 
     for test_case in range(1, T + 1):
-        N = int(input())
+        N = int(input().strip())
 
         L = []
 
@@ -38,12 +38,12 @@ def main():
 
         num = len(LIS) - 1
 
-        DP = DP[::-1]
+        DP = DP[::-1][:]
         for idx, elem in enumerate(DP):
             if elem == num:
                 DP[idx] = -1
                 num -= 1
-        DP = DP[::-1]
+        DP = DP[::-1][:]
 
         answer = 0
         dp_length = len(DP)
